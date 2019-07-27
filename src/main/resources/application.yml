@@ -15,3 +15,6 @@ spring:
 
 server:
   port: 5000
+  servlet:
+    session:
+      timeout: 100m
