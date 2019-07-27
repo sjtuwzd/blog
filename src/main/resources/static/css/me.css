@@ -68,6 +68,14 @@ body {
     /*top: 25% !important;*/
 }
 
+.blog-logo-backend {
+    position: relative !important;
+    top: 8px !important;
+
+    /*position: absolute !important;*/
+    /*top: 25% !important;*/
+}
+
 
 .m-text-thin {
     font-weight: 300 !important;

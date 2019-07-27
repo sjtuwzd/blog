@@ -25,7 +25,7 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class = "ui container">
         <div class = "ui inverted secondary stackable menu">
-            <h2 class="ui teal header blog-logo">管理后台</h2>
+            <h2 class="ui teal header blog-logo-backend">Management</h2>
             <a href ="#" th:href="@{/admin/blogs}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="mini idea icon"></i>博客</a>
             <a href ="#" th:href="@{/admin/types}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="mini tags icon"></i>分类</a>
             <a href ="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="mini clone icon"></i>标签</a>
