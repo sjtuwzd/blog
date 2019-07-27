@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动端适配-->
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+
+    <!--semantic UI import-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+
+<!--导航-->
+<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class = "ui container">
+        <div class = "ui inverted secondary stackable menu">
+            <h2 class="ui teal header blog-logo">Zhengda</h2>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+            <a href ="#" class="active m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+            <div class="right item m-mobile-hide">
+<!--                为什么要用icon才行？ https://www.cnblogs.com/-beyond/p/8989384.html-->
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+<!--                <i class="search icon"></i>-->
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+
+<!--main content-->
+<div class="m-container m-padded-tb-big">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+
+                <div class="ui segment">
+                    <img src="https://picsum.photos/id/135/800/600" alt="" class="ui rounded image">
+                </div>
+            </div>
+
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">
+                        关于我
+                    </div>
+                </div>
+
+                <div class="ui attached segment">
+                    <p class = 'm-text'>
+                        金木水火土
+                    </p>
+
+                    <p class = 'm-text'>
+                        上山打老虎
+                    </p>
+                </div>
+
+                <div class="ui attached segment">
+                    <div class="ui basic orange label">
+                        编程
+                    </div>
+
+                    <div class="ui basic orange label">
+                        运动
+                    </div>
+
+                    <div class="ui basic orange label">
+                        投资
+                    </div>
+
+                    <div class="ui basic orange label">
+                        旅行
+                    </div>
+
+
+                </div>
+
+                <div class="ui attached segment">
+
+                    <div class="ui basic teal label m-margin-tb-tiny">
+                        Java
+                    </div>
+
+                    <div class="ui basic teal label m-margin-tb-tiny">
+                        C++
+                    </div>
+
+                    <div class="ui basic teal label m-margin-tb-tiny">
+                        Python
+                    </div>
+
+                    <div class="ui basic teal label m-margin-tb-tiny">
+                        Spring Framework
+                    </div>
+
+                    <div class="ui basic teal label m-margin-tb-tiny">
+                        MySQL
+                    </div>
+
+                    <div class="ui basic teal label m-margin-tb-tiny">
+                        Machine Learning
+                    </div>
+
+                    <div class="ui basic teal label m-margin-tb-tiny">
+                        Javascript
+                    </div>
+
+                    <div class="ui basic teal label m-margin-tb-tiny">
+                        ...
+                    </div>
+
+                </div>
+
+                <div class="ui bottom attached segment">
+                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-content="534169739" data-position = "bottom center"><i class="qq icon"></i></a>
+                </div>
+
+                <div class="ui wechat-qr flowing popup transition hidden">
+                    <img src="../static/images/wechat.png" alt="" class="ui rounded image" style="width: 100px">
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class=" item m-mobile-hide">
+                    <img src="../static/images/wechat.png" class = "ui rounded centered image" alt="" style="width: 110px;">
+                </div>
+<!--                <img src="./static/images/wechat.png" class = "ui rounded image" alt="" style="width: 150px;">-->
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Newest Blog</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test</a>
+                    <a href="#" class="item">test</a>
+                    <a href="#" class="item">test</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Contact</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email: zhengdatim@gmail.com</a>
+                    <a href="#" class="item">WeChat: Mc-Gys</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">About this Blog</h4>
+<!--                字的颜色有问题-->
+                <p class = "m-text-thin m-text-spaced m-opacity-mini">Welcome to my blog! Currently I am a CS graduate student at Carnegie Mellon University.I wish you could
+                gain some thoughts here.</p>
+            </div>
+        </div>
+        <!--    分割线-->
+        <div class="ui inverted section divider"></div>
+        <p class = "m-text-thin m-text-spaced m-opacity-small">Copyright © 2018-2019 By Zhengda</p>
+    </div>
+</footer>
+
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.qq').popup();
+
+    $('.wechat').popup({
+        popup : $('.wechat-qr'),
+        on : 'hover',
+        position : 'bottom center'
+    });
+
+
+
+</script>
+</body>
+</html>

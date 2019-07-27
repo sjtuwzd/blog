@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace = "_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <title>404</title>
+    <link rel="stylesheet" href="../../static/css/me.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<!--    <link rel="stylesheet" href="../static/css/typo.css">-->
+<!--    <link rel="stylesheet" href="../static/css/animate.css">-->
+<!--    <link rel="stylesheet" href="../static/css/prism.css">-->
+<!--    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css">-->
+</head>
+<body>
+<nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class = "ui container">
+        <div class = "ui inverted secondary stackable menu">
+            <h2 class="ui teal header blog-logo">Zhengda</h2>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+            <div class="right item m-mobile-hide">
+                <!--                为什么要用icon才行？ https://www.cnblogs.com/-beyond/p/8989384.html-->
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+                <!--                <i class="search icon"></i>-->
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<div class = "m-container-small m-padded-tb-massive">
+    <div class="ui error message">
+        <div class="ui container">
+            <h2>404</h2>
+            <p>对不起，您访问的资源不存在</p>
+        </div>
+    </div>
+</div>
+
+
+
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class=" item m-mobile-hide">
+                    <img src="../static/images/wechat.png" th:src="@{images/wechat.png}" class = "ui rounded centered image" alt="" style="width: 110px;">
+                </div>
+                <!--                <img src="./static/images/wechat.png" class = "ui rounded image" alt="" style="width: 150px;">-->
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Newest Blog</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test</a>
+                    <a href="#" class="item">test</a>
+                    <a href="#" class="item">test</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Contact</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email: zhengdatim@gmail.com</a>
+                    <a href="#" class="item">WeChat: Mc-Gys</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">About this Blog</h4>
+                <!--                字的颜色有问题-->
+                <p class = "m-text-thin m-text-spaced m-opacity-mini">Welcome to my blog! Currently I am a CS graduate student at Carnegie Mellon University.I wish you could
+                    gain some thoughts here.</p>
+            </div>
+        </div>
+        <!--    分割线-->
+        <div class="ui inverted section divider"></div>
+        <p class = "m-text-thin m-text-spaced m-opacity-small">Copyright © 2018-2019 By Zhengda</p>
+    </div>
+
+
+</footer>
+
+<th:block th:replace="_fragments :: script">
+
+</th:block>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端适配-->
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>分类管理</title>
+
+    <!--semantic UI import-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="../../static/css/me.css">
+</head>
+<body>
+
+<!--导航-->
+<nav th:replace="admin/_fragments:: menu(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class = "ui container">
+        <div class = "ui inverted secondary stackable menu">
+            <h2 class="ui teal header blog-logo">管理后台</h2>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>博客</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>分类</a>
+            <a href ="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>标签</a>
+
+            <div class="m-item m-mobile-hide right menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="https://picsum.photos/id/235/100/100" alt="" class="ui avatar image">
+                        Jobs Steve
+                    </div>
+
+                    <i class="dropdown icon"> </i>
+                        <div class="menu">
+                            <a th:href = "@{/admin/logout}" href="#" class="item">注销</a>
+                        </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" th:href="@{/admin/types/input}" class="item">新增</a>
+            <a href="#" th:href="@{/admin/types}" class="teal active item">列表</a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--main content-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+
+        <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+            <i class="close icon"></i>
+            <div class="header">提示</div>
+            <p th:text="${message}">恭喜，操作成功！</p>
+
+        </div>
+        <table class="ui compact teal table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>分类名称</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr th:each="type,iterStat : ${page.content}">
+                    <td th:text="${type.id}">1</td>
+                    <td th:text="${type.name}">如何打倒敌人</td>
+                    <td>
+                        <a href="#" class="ui mini teal basic button" th:href="@{/admin/types/{id}/input(id=${type.id})}">编辑</a>
+                        <a href="#" class="ui mini red basic button" th:href="@{/admin/types/{id}/delete(id=${type.id})}">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="6" >
+                        <div class="ui mini pagination menu" th:if = "${page.totalPages}>1">
+                            <a th:href="@{/admin/types(page=${page.number}-1)}" class="item" th:unless="${page.first}">上一页</a>
+
+                            <a th:href="@{/admin/types(page=${page.number}+1)}"href="#" class="item" th:unless="${page.last}">下一页</a>
+
+                        </div>
+
+                        <a th:href="@{/admin/types/input}" class="ui right floated mini teal basic button">新增</a>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+</div>
+
+<br>
+<br>
+<footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class=" item m-mobile-hide">
+                    <img src="../../static/images/wechat.png" class = "ui rounded centered image" alt="" style="width: 110px;">
+                </div>
+<!--                <img src="./static/images/wechat.png" class = "ui rounded image" alt="" style="width: 150px;">-->
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Newest Blog</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test</a>
+                    <a href="#" class="item">test</a>
+                    <a href="#" class="item">test</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Contact</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email: zhengdatim@gmail.com</a>
+                    <a href="#" class="item">WeChat: Mc-Gys</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">About this Blog</h4>
+<!--                字的颜色有问题-->
+                <p class = "m-text-thin m-text-spaced m-opacity-mini">Welcome to my blog! Currently I am a CS graduate student at Carnegie Mellon University.I wish you could
+                gain some thoughts here.</p>
+            </div>
+        </div>
+        <!--    分割线-->
+        <div class="ui inverted section divider"></div>
+        <p class = "m-text-thin m-text-spaced m-opacity-small">Copyright © 2018-2019 By Zhengda</p>
+    </div>
+</footer>
+
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
+
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
+
+
+</script>
+</body>
+</html>

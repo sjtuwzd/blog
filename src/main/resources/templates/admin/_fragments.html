@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <!--移动端适配-->
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <title th:replace="${title}">详情页</title>
+
+    <!--semantic UI import-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>-->
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../../static/css/prism.css" th:href="@{/css/prism.css}">
+    <link rel="stylesheet" href="../../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+
+</head>
+
+<!--导航-->
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class = "ui container">
+        <div class = "ui inverted secondary stackable menu">
+            <h2 class="ui teal header blog-logo">管理后台</h2>
+            <a href ="#" th:href="@{/admin/blogs}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="mini idea icon"></i>博客</a>
+            <a href ="#" th:href="@{/admin/types}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="mini tags icon"></i>分类</a>
+            <a href ="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="mini clone icon"></i>标签</a>
+
+            <div class="m-item m-mobile-hide right menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="https://picsum.photos/id/235/100/100" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}">
+                        <span th:text="${session.user.nickname}">吴正达</span>
+                    </div>
+
+                    <i class="dropdown icon"> </i>
+                    <div class="menu">
+                        <a href="#" class="item" th:href = "@{/admin/logout}">注销</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+
+
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class=" item m-mobile-hide">
+                    <img src="../../static/images/wechat.png" th:src="@{/images/wechat.png}" class = "ui rounded centered image" alt="" style="width: 110px;">
+                </div>
+                <!--                <img src="./static/images/wechat.png" class = "ui rounded image" alt="" style="width: 150px;">-->
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Newest Blog</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test</a>
+                    <a href="#" class="item">test</a>
+                    <a href="#" class="item">test</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Contact</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email: zhengdatim@gmail.com</a>
+                    <a href="#" class="item">WeChat: Mc-Gys</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">About this Blog</h4>
+                <!--                字的颜色有问题-->
+                <p class = "m-text-thin m-text-spaced m-opacity-mini">Welcome to my blog! Currently I am a CS graduate student at Carnegie Mellon University.I wish you could
+                    gain some thoughts here.</p>
+            </div>
+        </div>
+        <!--    分割线-->
+        <div class="ui inverted section divider"></div>
+        <p class = "m-text-thin m-text-spaced m-opacity-small">Copyright © 2018-2019 By Zhengda</p>
+    </div>
+</footer>
+
+
+<th:block th:fragment="script">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="../static/js/prism.js" th:src="@{/js/prism.js}"></script>
+<script src="../static/lib/tocbot/tocbot.min.js"  th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+<script src="../static/lib/qrcode/qrcode.js"  th:src="@{/lib/qrcode/qrcode.js}"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+<script src="../static/lib/waypoints/jquery.waypoints.js"  th:src="@{/lib/waypoints/jquery.waypoints.js}"></script>
+<script src = "../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+</th:block>
+
+
+
+<body>
+
+</body>
+</html>
