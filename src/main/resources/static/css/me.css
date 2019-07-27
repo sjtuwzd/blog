@@ -62,7 +62,7 @@ body {
 
 .blog-logo {
     position: relative !important;
-    top: 16px !important;
+    top: 50px !important;
 
     /*position: absolute !important;*/
     /*top: 25% !important;*/
@@ -70,7 +70,7 @@ body {
 
 .blog-logo-backend {
     position: relative !important;
-    top: 8px !important;
+    top: 38px !important;
 
     /*position: absolute !important;*/
     /*top: 25% !important;*/
