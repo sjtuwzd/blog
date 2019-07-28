@@ -1500,6 +1500,7 @@
             
             this.previewContainer.find("." + editormd.classNames.tex).each(function(){
                 var tex  = $(this);
+                // var tex  = $(this), html = tex.html().replace(/<em>(.+?)<\/em>/ig, '_$1_');
                 editormd.$katex.render(tex.text(), tex[0]);
                 
                 tex.find(".katex").css("font-size", "1.6em");
@@ -4015,7 +4016,8 @@
             var katexHandle = function() {
                 div.find("." + editormd.classNames.tex).each(function(){
                     var tex  = $(this);                    
-                    katex.render(tex.html().replace(/&lt;/g, "<").replace(/&gt;/g, ">"), tex[0]);                    
+                    katex.render(tex.html().replace(/&lt;/g, "<").replace(/&gt;/g, ">"), tex[0]);
+                    // katex.render(tex.html().replace(/<em>(.+?)<\/em>/ig,'_$1_').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/<br[^>]*>/ig,'\n'), tex[0]);
                     tex.find(".katex").css("font-size", "1.6em");
                 });
             };
