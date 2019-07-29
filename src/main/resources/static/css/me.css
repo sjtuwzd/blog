@@ -4,6 +4,7 @@ body {
 
 pre {
 overflow-x: auto !important;
+-webkit-overflow-scrolling: touch !important;
 }
 
 .m-margin-tb-tiny {
@@ -174,8 +175,8 @@ overflow-x: auto !important;
 }
 
 .m-padded-lr-responsive {
-    padding-left:4em !important;
-    padding-right:4em !important;
+    padding-left:2em !important;
+    padding-right:2em !important;
 }
 
 .m-mobile-lr-clear {
