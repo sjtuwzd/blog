@@ -80,3 +80,266 @@
 2019-07-29 00:07:24.492  INFO 31100 --- [http-nio-5000-exec-5] com.zhengda.blog.aspect.LogAspect        : Result : blog
 2019-07-29 00:07:25.076  INFO 31100 --- [http-nio-5000-exec-5] com.zhengda.blog.aspect.LogAspect        : Request : RequestLog{url='http://localhost:5000/comments/24', ip='127.0.0.1', classMethod='com.zhengda.blog.web.CommentController.comments', args=[24, {}]}
 2019-07-29 00:07:25.834  INFO 31100 --- [http-nio-5000-exec-5] com.zhengda.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-07-29 00:35:45.466  INFO 31100 --- [Thread-38] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:35:45.467  INFO 31100 --- [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:35:45.473  INFO 31100 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-29 00:35:45.487  INFO 31100 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-29 00:35:46.170  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Starting BlogApplication on DESKTOP-HFAD3KP with PID 31100 (C:\Users\WZD\Downloads\blog\target\classes started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 00:35:46.170 DEBUG 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 00:35:46.170  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : The following profiles are active: dev
+2019-07-29 00:35:46.581  INFO 31100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 00:35:46.632  INFO 31100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 4 repository interfaces.
+2019-07-29 00:35:46.712  INFO 31100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7faf85a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 00:35:46.913  INFO 31100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2019-07-29 00:35:46.914  INFO 31100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-29 00:35:46.914  INFO 31100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-29 00:35:46.934  INFO 31100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-29 00:35:46.934  INFO 31100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 762 ms
+2019-07-29 00:35:47.029  INFO 31100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-07-29 00:35:50.680  INFO 31100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-07-29 00:35:50.694  INFO 31100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 00:35:50.783  INFO 31100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 00:35:55.134  INFO 4952 --- [main] com.zhengda.blog.BlogApplicationTests    : Starting BlogApplicationTests on DESKTOP-HFAD3KP with PID 4952 (started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 00:35:55.135 DEBUG 4952 --- [main] com.zhengda.blog.BlogApplicationTests    : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 00:35:55.136  INFO 4952 --- [main] com.zhengda.blog.BlogApplicationTests    : The following profiles are active: dev
+2019-07-29 00:35:56.084  INFO 4952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 00:35:56.221  INFO 4952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126ms. Found 4 repository interfaces.
+2019-07-29 00:35:56.801  INFO 4952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36d4597] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 00:35:57.372  INFO 4952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-29 00:35:58.168  INFO 31100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:35:58.213  INFO 31100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-29 00:35:58.351  INFO 31100 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-29 00:35:58.829  INFO 31100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:35:58.852  WARN 31100 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 00:35:58.964  INFO 31100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 00:35:59.234  INFO 31100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2019-07-29 00:35:59.235  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Started BlogApplication in 13.101 seconds (JVM running for 1815.1)
+2019-07-29 00:35:59.238  INFO 31100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-07-29 00:36:02.381  INFO 4952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-29 00:36:02.484  INFO 4952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 00:36:02.568  INFO 4952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-29 00:36:02.570  INFO 4952 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-29 00:36:02.787  INFO 4952 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-29 00:36:03.243  INFO 4952 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 00:36:11.883  INFO 4952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:36:12.740  INFO 4952 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-29 00:36:14.362  INFO 4952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:36:14.478  WARN 4952 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 00:36:14.830  INFO 4952 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 00:36:15.303  INFO 4952 --- [main] com.zhengda.blog.BlogApplicationTests    : Started BlogApplicationTests in 20.649 seconds (JVM running for 21.717)
+2019-07-29 00:36:15.465  INFO 4952 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:36:15.468  INFO 4952 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:36:15.473  INFO 4952 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-29 00:36:18.348  INFO 4952 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-29 00:54:01.353  INFO 31100 --- [Thread-51] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:54:01.356  INFO 31100 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:54:01.358  INFO 31100 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-07-29 00:54:01.367  INFO 31100 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-07-29 00:54:15.854  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Starting BlogApplication on DESKTOP-HFAD3KP with PID 31100 (C:\Users\WZD\Downloads\blog\target\classes started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 00:54:15.854 DEBUG 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 00:54:15.854  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : The following profiles are active: dev
+2019-07-29 00:54:16.162  INFO 31100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 00:54:16.175  INFO 31100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 1 repository interfaces.
+2019-07-29 00:54:16.250  INFO 31100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7faf85a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 00:54:16.407  INFO 31100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2019-07-29 00:54:16.408  INFO 31100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-29 00:54:16.408  INFO 31100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-29 00:54:16.442  INFO 31100 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-07-29 00:54:16.442  INFO 31100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 586 ms
+2019-07-29 00:54:16.529  INFO 31100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-07-29 00:54:20.150  INFO 31100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-07-29 00:54:20.189  INFO 31100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 00:54:20.306  INFO 31100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 00:54:26.783  INFO 11564 --- [main] com.zhengda.blog.BlogApplicationTests    : Starting BlogApplicationTests on DESKTOP-HFAD3KP with PID 11564 (started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 00:54:26.784 DEBUG 11564 --- [main] com.zhengda.blog.BlogApplicationTests    : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 00:54:26.784  INFO 11564 --- [main] com.zhengda.blog.BlogApplicationTests    : The following profiles are active: dev
+2019-07-29 00:54:27.693  INFO 11564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 00:54:27.708  INFO 31100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:54:27.725  INFO 31100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-29 00:54:27.864  INFO 11564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154ms. Found 4 repository interfaces.
+2019-07-29 00:54:27.896  INFO 31100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:54:27.907  WARN 31100 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 00:54:27.976  INFO 31100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 00:54:28.212  INFO 31100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2019-07-29 00:54:28.213  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Started BlogApplication in 12.401 seconds (JVM running for 2924.079)
+2019-07-29 00:54:28.216  INFO 31100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-07-29 00:54:28.485  INFO 11564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e913b03e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 00:54:29.091  INFO 11564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-29 00:54:34.542  INFO 11564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-29 00:54:34.650  INFO 11564 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 00:54:34.738  INFO 11564 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-29 00:54:34.740  INFO 11564 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-29 00:54:34.973  INFO 11564 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-29 00:54:35.440  INFO 11564 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 00:54:44.397  INFO 11564 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:54:45.277  INFO 11564 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-29 00:54:47.100  INFO 11564 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:54:47.215  WARN 11564 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 00:54:47.558  INFO 11564 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 00:54:47.997  INFO 11564 --- [main] com.zhengda.blog.BlogApplicationTests    : Started BlogApplicationTests in 21.828 seconds (JVM running for 22.849)
+2019-07-29 00:54:48.140  INFO 11564 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:54:48.144  INFO 11564 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:54:48.149  INFO 11564 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-29 00:54:50.602  INFO 11564 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-29 00:54:57.717  INFO 31100 --- [Thread-57] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:54:57.718  INFO 31100 --- [Thread-57] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:54:57.719  INFO 31100 --- [Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-07-29 00:54:57.730  INFO 31100 --- [Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-07-29 00:55:13.033  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Starting BlogApplication on DESKTOP-HFAD3KP with PID 31100 (C:\Users\WZD\Downloads\blog\target\classes started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 00:55:13.034 DEBUG 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 00:55:13.034  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : The following profiles are active: dev
+2019-07-29 00:55:13.370  INFO 31100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 00:55:13.371  INFO 31100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-07-29 00:55:13.446  INFO 31100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7faf85a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 00:55:13.591  INFO 31100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2019-07-29 00:55:13.592  INFO 31100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-29 00:55:13.593  INFO 31100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-29 00:55:13.631  INFO 31100 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-07-29 00:55:13.631  INFO 31100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 594 ms
+2019-07-29 00:55:13.738  INFO 31100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2019-07-29 00:55:17.355  INFO 31100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2019-07-29 00:55:17.384  INFO 31100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 00:55:17.480  INFO 31100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 00:55:23.850  INFO 30712 --- [main] com.zhengda.blog.BlogApplicationTests    : Starting BlogApplicationTests on DESKTOP-HFAD3KP with PID 30712 (started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 00:55:23.851 DEBUG 30712 --- [main] com.zhengda.blog.BlogApplicationTests    : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 00:55:23.852  INFO 30712 --- [main] com.zhengda.blog.BlogApplicationTests    : The following profiles are active: dev
+2019-07-29 00:55:24.794  INFO 30712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 00:55:24.827  INFO 31100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:55:24.844  INFO 31100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-29 00:55:24.945  INFO 31100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:55:24.945  INFO 30712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138ms. Found 4 repository interfaces.
+2019-07-29 00:55:24.953  WARN 31100 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 00:55:25.012  INFO 31100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 00:55:25.242  INFO 31100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2019-07-29 00:55:25.242  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Started BlogApplication in 12.258 seconds (JVM running for 2981.109)
+2019-07-29 00:55:25.246  INFO 31100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-07-29 00:55:25.536  INFO 30712 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e913b03e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 00:55:26.128  INFO 30712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-29 00:55:31.130  INFO 30712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-29 00:55:31.234  INFO 30712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 00:55:31.331  INFO 30712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-29 00:55:31.333  INFO 30712 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-29 00:55:31.542  INFO 30712 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-29 00:55:32.027  INFO 30712 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 00:55:40.914  INFO 30712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:55:41.778  INFO 30712 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-29 00:55:43.473  INFO 30712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:55:43.574  WARN 30712 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 00:55:43.921  INFO 30712 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 00:55:44.407  INFO 30712 --- [main] com.zhengda.blog.BlogApplicationTests    : Started BlogApplicationTests in 21.001 seconds (JVM running for 21.966)
+2019-07-29 00:55:44.608  INFO 30712 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:55:44.614  INFO 30712 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:55:44.621  INFO 30712 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-29 00:55:47.147  INFO 30712 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-29 00:56:09.137  INFO 31100 --- [Thread-66] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:56:09.138  INFO 31100 --- [Thread-66] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:56:09.139  INFO 31100 --- [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2019-07-29 00:56:09.151  INFO 31100 --- [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2019-07-29 00:56:09.950  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Starting BlogApplication on DESKTOP-HFAD3KP with PID 31100 (C:\Users\WZD\Downloads\blog\target\classes started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 00:56:09.950 DEBUG 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 00:56:09.950  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : The following profiles are active: dev
+2019-07-29 00:56:10.240  INFO 31100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 00:56:10.282  INFO 31100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 4 repository interfaces.
+2019-07-29 00:56:10.336  INFO 31100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7faf85a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 00:56:10.497  INFO 31100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2019-07-29 00:56:10.499  INFO 31100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-29 00:56:10.499  INFO 31100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-29 00:56:10.528  INFO 31100 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-07-29 00:56:10.528  INFO 31100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 575 ms
+2019-07-29 00:56:10.678  INFO 31100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2019-07-29 00:56:10.950  INFO 30452 --- [main] com.zhengda.blog.BlogApplicationTests    : Starting BlogApplicationTests on DESKTOP-HFAD3KP with PID 30452 (started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 00:56:10.951 DEBUG 30452 --- [main] com.zhengda.blog.BlogApplicationTests    : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 00:56:10.957  INFO 30452 --- [main] com.zhengda.blog.BlogApplicationTests    : The following profiles are active: dev
+2019-07-29 00:56:11.858  INFO 30452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 00:56:11.989  INFO 30452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118ms. Found 4 repository interfaces.
+2019-07-29 00:56:12.577  INFO 30452 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$903421] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 00:56:13.173  INFO 30452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-29 00:56:14.417  INFO 31100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2019-07-29 00:56:14.431  INFO 31100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 00:56:14.518  INFO 31100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 00:56:18.183  INFO 30452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-29 00:56:18.312  INFO 30452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 00:56:18.414  INFO 30452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-29 00:56:18.416  INFO 30452 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-29 00:56:18.624  INFO 30452 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-29 00:56:19.112  INFO 30452 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 00:56:22.080  INFO 31100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:56:22.118  INFO 31100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-29 00:56:22.274  INFO 31100 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-29 00:56:22.626  INFO 31100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:56:22.647  WARN 31100 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 00:56:22.734  INFO 31100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 00:56:22.991  INFO 31100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2019-07-29 00:56:22.991  INFO 31100 --- [restartedMain] com.zhengda.blog.BlogApplication         : Started BlogApplication in 13.083 seconds (JVM running for 3038.857)
+2019-07-29 00:56:22.993  INFO 31100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-07-29 00:56:27.821  INFO 30452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:56:28.732  INFO 30452 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-29 00:56:30.442  INFO 30452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:56:30.592  WARN 30452 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 00:56:30.924  INFO 30452 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 00:56:31.342  INFO 30452 --- [main] com.zhengda.blog.BlogApplicationTests    : Started BlogApplicationTests in 20.891 seconds (JVM running for 22.03)
+2019-07-29 00:56:31.496  INFO 30452 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-29 00:56:31.500  INFO 30452 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 00:56:31.505  INFO 30452 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-29 00:56:34.057  INFO 30452 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-29 04:40:13.812  WARN 31100 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=2h57m29s166ms589µs700ns).
+2019-07-29 09:59:21.414  WARN 31100 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=5h16m11s461ms115µs400ns).
+2019-07-29 11:36:31.023  INFO 31100 --- [http-nio-5000-exec-3] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-29 11:36:31.024  INFO 31100 --- [http-nio-5000-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-29 11:36:31.042  INFO 31100 --- [http-nio-5000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-07-29 15:26:47.944  INFO 26016 --- [restartedMain] com.zhengda.blog.BlogApplication         : Starting BlogApplication on DESKTOP-HFAD3KP with PID 26016 (C:\Users\WZD\Downloads\blog\target\classes started by WZD in C:\Users\WZD\Downloads\blog)
+2019-07-29 15:26:47.951 DEBUG 26016 --- [restartedMain] com.zhengda.blog.BlogApplication         : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-29 15:26:47.951  INFO 26016 --- [restartedMain] com.zhengda.blog.BlogApplication         : The following profiles are active: dev
+2019-07-29 15:26:48.085  INFO 26016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-29 15:26:48.086  INFO 26016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-29 15:26:50.063  INFO 26016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-29 15:26:50.204  INFO 26016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 4 repository interfaces.
+2019-07-29 15:26:50.808  INFO 26016 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$980a1c6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-29 15:26:51.607  INFO 26016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2019-07-29 15:26:51.658  INFO 26016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-29 15:26:51.659  INFO 26016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-29 15:26:51.861  INFO 26016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-29 15:26:51.861  INFO 26016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3775 ms
+2019-07-29 15:26:52.215  INFO 26016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-29 15:26:56.704  INFO 26016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-29 15:26:56.781  INFO 26016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-29 15:26:56.887  INFO 26016 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-29 15:26:56.889  INFO 26016 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-29 15:26:57.102  INFO 26016 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-29 15:26:57.635  INFO 26016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-29 15:27:06.337  INFO 26016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-29 15:27:06.460  INFO 26016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-29 15:27:06.830  INFO 26016 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-29 15:27:07.506  INFO 26016 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-29 15:27:07.565  WARN 26016 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-29 15:27:07.721  INFO 26016 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-29 15:27:08.294  INFO 26016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2019-07-29 15:27:08.296  INFO 26016 --- [restartedMain] com.zhengda.blog.BlogApplication         : Started BlogApplication in 21.398 seconds (JVM running for 23.43)
+2019-07-29 15:27:16.577  INFO 26016 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-29 15:27:16.578  INFO 26016 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-29 15:27:16.597  INFO 26016 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-07-29 15:27:16.636  INFO 26016 --- [http-nio-5000-exec-1] com.zhengda.blog.aspect.LogAspect        : Request : RequestLog{url='http://localhost:5000/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhengda.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2019-07-29 15:27:19.519  WARN 26016 --- [http-nio-5000-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-07-29 15:27:20.042  INFO 26016 --- [http-nio-5000-exec-1] com.zhengda.blog.aspect.LogAspect        : Result : index
+2019-07-29 15:27:22.863  INFO 26016 --- [http-nio-5000-exec-7] com.zhengda.blog.aspect.LogAspect        : Request : RequestLog{url='http://localhost:5000/blog/43', ip='0:0:0:0:0:0:0:1', classMethod='com.zhengda.blog.web.IndexController.blog', args=[43, {}]}
+2019-07-29 15:27:24.163  INFO 26016 --- [http-nio-5000-exec-7] com.zhengda.blog.aspect.LogAspect        : Result : blog
+2019-07-29 15:27:24.791  INFO 26016 --- [http-nio-5000-exec-7] com.zhengda.blog.aspect.LogAspect        : Request : RequestLog{url='http://localhost:5000/comments/43', ip='0:0:0:0:0:0:0:1', classMethod='com.zhengda.blog.web.CommentController.comments', args=[43, {}]}
+2019-07-29 15:27:25.553  INFO 26016 --- [http-nio-5000-exec-7] com.zhengda.blog.aspect.LogAspect        : Result : blog :: commentList
