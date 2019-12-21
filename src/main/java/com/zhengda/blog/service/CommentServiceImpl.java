@@ -22,7 +22,7 @@ public class CommentServiceImpl implements CommentService {
     public List<Comment> listCommentByBlogId(Long blogId) {
         Sort sort = new Sort(Sort.Direction.DESC, "createTime");
         //第一层的评论
-        List<Comment> comments = commentRepository.findByBlogId(blogId, sort);
+        List<Comment> comments = commentRepository.findByBlogIdAndParentCommentNull(blogId, sort);
         return eachComment(comments);
     }
 

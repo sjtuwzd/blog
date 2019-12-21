@@ -131,6 +131,10 @@ overflow-x: auto !important;
     color: #333 !important;
 }
 
+.m-teal {
+    color: #00B6AD !important;
+}
+
 .m-margin-top-small {
     margin-top: 0.5em !important;
 }
