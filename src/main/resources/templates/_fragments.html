@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
     <link rel="stylesheet" href="../static/css/prism.css" th:href="@{/css/prism.css}">
     <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../static/js/katex.min.js" th:href="@{/css/katex.min.css}">
 
 </head>
 
@@ -97,10 +98,12 @@
 <th:block th:fragment="script">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-<script src="../static/js/prism.js" th:src="@{/js/prism.js}"></script>
+<!--<script src="../static/js/prism.js" th:src="@{/js/prism.js}"></script>-->
 <script src="../static/lib/tocbot/tocbot.min.js"  th:src="@{/lib/tocbot/tocbot.min.js}"></script>
 <script src="../static/lib/qrcode/qrcode.js"  th:src="@{/lib/qrcode/qrcode.js}"></script>
 <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="../static/js/katex.min.js" th:src="@{/js/katex.min.js}"></script>
+    <script src="../static/js/mermaid.min.js" th:src="@{/js/mermaid.min.js}"></script>
 <script src="../static/lib/waypoints/jquery.waypoints.js"  th:src="@{/lib/waypoints/jquery.waypoints.js}"></script>
     <script src="../static/js/l2dwidget.min.js" th:src="@{/js/l2dwidget.min.js}"></script>
     <script>

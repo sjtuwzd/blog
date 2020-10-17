@@ -7,6 +7,7 @@ import com.zhengda.blog.po.Blog;
 import com.zhengda.blog.po.Type;
 import com.zhengda.blog.util.MarkdownUtils;
 import com.zhengda.blog.util.MyBeanUtils;
+import com.zhengda.blog.util.VschParser;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -63,7 +64,10 @@ public class BlogServiceImpl implements BlogService {
         Blog b = new Blog();
         BeanUtils.copyProperties(blog,b);
         String content = b.getContent();
-        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        System.out.println(content);
+//        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        b.setContent(VschParser.parseMarkdown(content));
+//        System.out.println(VschParser.parseMarkdown(content));
         blogRepository.updateViews(id);
 
 //        b.setContent(MarkdownUtils.markdownToHtml(content));

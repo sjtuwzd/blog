@@ -3958,10 +3958,10 @@
             smartypants : true
         };
         
-		markdownDoc = new String(markdownDoc);
+		// markdownDoc = new String(markdownDoc);
         
         var markdownParsed = marked(markdownDoc, markedOptions);
-        
+
         markdownParsed = editormd.filterHTMLTags(markdownParsed, settings.htmlDecode);
         
         if (settings.markdownSourceCode) {
